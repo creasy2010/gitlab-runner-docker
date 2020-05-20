@@ -1,0 +1,5 @@
+gitlabRunner:
+  image: gitlab/gitlab-runner:latest
+  volumes:
+    - ./gitlab-runner/config:/etc/gitlab-runner
+    - ./run/docker.sock:/var/run/docker.sock
